@@ -3,7 +3,7 @@
     <packageinformation>
         <packagename>=US= ACP Edit Log Extension</packagename>
         <packagedescription>Adds additional logged items to the ACP Edit Log plugin.</packagedescription>
-        <version>1.0.1</version>
+        <version>1.0.5</version>
         <date>2017-02-04</date>
     </packageinformation>
 
@@ -15,6 +15,7 @@
     <requiredpackages>
         <requiredpackage minversion="2.1.0">com.woltlab.wcf</requiredpackage>
         <requiredpackage minversion="1.0.0">io.padarom.plugins.editlog</requiredpackage>
+        <requiredpackage minversion="1.0.5">com.clanunknownsoldiers.plugin.awards</requiredpackage>
     </requiredpackages>
 
     <instructions type="install">

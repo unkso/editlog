@@ -21,10 +21,11 @@ class ACPEditAwardGivenListener implements IParameterizedEventListener
 
         $handler = ACPEditLogHandler::getInstance();
         $handler->log($award, WCF::getUser(), 'create', [
-            'title' => $award->getName(),
+            'title' => $award->title,
             'description' => $award->description,
             'date' => $award->date,
             'userID' => $award->userID,
+            'awardedNumber' => $award->awardedNumber,
             'username' => (new User($award->userID))->getUsername(),
         ]);
     }

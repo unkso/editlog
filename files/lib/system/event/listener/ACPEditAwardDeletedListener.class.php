@@ -24,7 +24,7 @@ class ACPEditAwardDeletedListener implements IParameterizedEventListener
 
             $handler = ACPEditLogHandler::getInstance();
             $handler->log($award, WCF::getUser(), 'delete', [
-                'title' => $award->getName(),
+                'title' => $award->getAward()->title,
                 'description' => $award->description,
                 'date' => $award->date,
                 'userID' => $award->userID,
